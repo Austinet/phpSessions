@@ -29,7 +29,9 @@ function loginUser($email, $password){
                     header("Location: ../dashboard.php");
                     break;
                 } else {
-                    echo "Incorrect password";
+                    echo "<h1>Incorrect password</h1>";
+                    echo " <br><a href='../forms/login.html'>Login</a>";
+                    die();
                 }
           
               }

@@ -38,7 +38,9 @@ function resetPassword($email, $newpassword){
                    fputcsv($handle2, $users_array[$i]);       
                 }  
                 fclose($handle2);
-                header("Location: ../forms/login.html");
+                echo "<h1 class='text-center'>Password successfully changed</h1>";
+                echo " <br><a href='../forms/login.html'>Login</a>";
+                // header("Location: ../forms/login.html");
         }
     }
     echo "Account not found, pls register";

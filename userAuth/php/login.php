@@ -30,7 +30,8 @@ function loginUser($email, $password){
                     break;
                 } else {
                     echo "<h1>Incorrect password</h1>";
-                    echo " <br><a href='../forms/login.html'>Login</a>";
+                    // echo " <br><a href='../forms/login.html'>Login</a>";
+                    header("Location: ../forms/login.html");
                     die();
                 }
           
